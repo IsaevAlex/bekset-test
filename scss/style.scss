@@ -1,0 +1,214 @@
+@import "_fonts";
+
+body{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x:hidden;
+
+}
+html {
+  overflow-y: scroll;
+}
+
+.media:nth-child(5){
+	display: none;
+}
+
+.secret-list{
+	display: none;
+}
+
+.navbar{
+	margin-top: 20px;
+	margin-bottom: 0;
+
+	li a{
+		font-size: 21px;
+		color: #70276f;
+	}
+	
+	li a:hover{
+		background-color: #70276f;
+		color: #fff;
+	}
+
+}
+
+
+
+.navbar .navbar-toggle .icon-bar {
+    background-color: #70276f;
+}
+
+#second-navbar{
+	border-bottom: 3px solid #70276f;
+	font-size: 19px;
+	
+	li a{
+		color: #28374f;	
+		font-family: $regular;
+	}
+
+	li a:hover{
+		background-color: #70276f;
+		color: #fff;
+	}
+	
+}
+
+#first-section{
+	background-color: #efefef;
+	padding: 20px 0; 
+
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	h5:nth-child(1){
+		font-size: 37px;
+		font-family: $semibold;
+		flex-grow: 2;
+
+	}
+
+	h5:nth-child(2){
+		font-family: $regular;
+		
+		font-size: 19px;
+		
+	}
+}
+
+
+
+.media-head-left{
+	float: left;
+	h4{
+		font-family: $semibold;
+		font-size: 22px;
+	}
+
+	span{
+		font-family: $regular;
+		font-size: 14px;
+	}
+}
+
+.media-head-right{
+	float: right;
+	span{
+		display: none;
+	}
+	h4{
+		font-size: 29px;
+		color: #ffc263;
+	}
+
+	p{
+		font-family: $regular;
+		font-size: 17px;
+	}
+}
+
+.media p{
+	clear: both;
+	font-family: $regular;
+	font-size: 18px;
+}
+
+#second-section{
+	padding: 20px 0;
+	border-bottom: 3px solid #70276f;
+	
+	span{
+		font-family: $light;
+	}
+
+	span:nth-child(1){
+		font-size: 29px;
+		color: #70276f;
+	}
+
+	span:nth-child(2){
+		font-size: 20px;
+	}
+
+	li{
+		list-style: none;
+		font-family: $regular;
+		font-size: 21px;
+	}
+	h3{
+		font-family: $semibold;
+		font-size: 24px;
+		color: #333333;
+	}
+}
+
+input[type="checkbox"]{
+	margin-right: 5px;
+}
+
+.glyphicon-star{
+	background-color: #fff;
+	color: #ffc263;
+}
+
+#third-section {
+	ul{
+		float: right;
+		list-style: none; 
+		margin: 20px; 
+		padding: 0;
+	}
+   
+    li {display: inline; padding: 10px; }
+}
+
+#fourth-section{
+	ul li{
+		font-size: 18px;
+		font-family: $regular;
+	}
+
+	h4{
+		font-family: $semibold;
+		font-size: 22px;
+	}
+
+	p{
+		font-family: $regular;
+		font-size: 20px;
+	}
+	
+}
+
+#fourth-section-2 .col-md-4:nth-child(2){
+	margin-top: 32px;
+}
+
+.glyphicon-earphone, .glyphicon-phone, .glyphicon-map-marker, .glyphicon-ok-sign{
+	color: #70276f;
+}
+
+footer {
+	.container{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	background-color: #efefef;
+	padding: 20px 0;	
+
+	span{
+		flex-grow: 2;
+		font-family: $regular;
+		font-size: 19px;
+	}
+}
+
+
+

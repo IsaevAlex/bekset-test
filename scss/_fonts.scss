@@ -1,0 +1,18 @@
+@font-face {
+    src: url("../fonts/source-sans-pro.light.ttf");
+    font-family: Source Sans Pro light;
+}
+
+@font-face{
+	src: url("../fonts/source-sans-pro.regular.ttf");
+	font-family: Source Sans Pro Regular;
+}
+
+@font-face{
+	src: url("../fonts/source-sans-pro.semibold.ttf");
+	font-family: Source Sans Pro Semibold;
+}
+
+$regular: Source Sans Pro Regular;
+$light: Source Sans Pro light;
+$semibold: Source Sans Pro Semibold;
