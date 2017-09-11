@@ -171,9 +171,6 @@ ul.submenu {
     border: 1px solid #70276f ;
 }
 
-
-
-
 ul.topnav > li:hover > ul.submenu {
     display: block;
 }
@@ -181,7 +178,7 @@ ul.topnav > li:hover > ul.submenu {
 
 #first-section{
 	background-color: #efefef;
-	padding: 20px 0; 
+	padding: 40px 0; 
 
 	.container{
 		display: flex;
@@ -321,7 +318,7 @@ input[type="checkbox"] + label{
 	ul{
 		float: right;
 		list-style: none; 
-		margin: 20px; 
+		margin-top: 20px; 
 		padding: 0;
 	}
    
@@ -333,6 +330,7 @@ input[type="checkbox"] + label{
 		font-size: 14px;
 		font-family: $regular;
 		color: #000000;
+
 	}
 
 	h4{
@@ -347,6 +345,14 @@ input[type="checkbox"] + label{
 		color: #282626;
 	}
 	
+}
+
+#fourth-section-1{
+	padding-top: 60px;
+}
+
+#fourth-section-2{
+	padding: 40px 0px;
 }
 
 #fourth-section-2 .col-md-4:nth-child(2){

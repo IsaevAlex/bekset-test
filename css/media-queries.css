@@ -72,6 +72,8 @@
     border-bottom: 2px solid #e4e4e4; }
   .media:nth-child(5) {
     display: block; }
+  #fourth-section {
+    margin-left: 20px; }
   #fourth-section-2 .col-md-4:nth-child(2) {
     margin-bottom: 32px; } }
 
