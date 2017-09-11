@@ -100,7 +100,7 @@ ul.topnav {
 /* Float the list items side by side */
 ul.topnav li {
   float: left;
-  text-transform: uppercase; }
+ }
 
 
 
@@ -165,8 +165,14 @@ ul.topnav > li:hover > ul.submenu {
 	}
 }
 
+
 .border-class span:nth-child(2){
 	float: right;
+}
+
+.border-class-title{
+	padding: 25px 0;
+	border-bottom: 2px solid #efefef;
 }
 
 
@@ -305,7 +311,7 @@ input[type="checkbox"] + label{
 }
 
 #fourth-section-2 .col-md-4:nth-child(2){
-	margin-top: 32px;
+	margin-top: 25px;
 }
 
 .glyphicon-earphone, .glyphicon-phone, .glyphicon-map-marker, .glyphicon-ok-sign{
@@ -317,17 +323,32 @@ input[type="checkbox"] + label{
 }
 
 #fifth-section {
+
 	.container{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
+
 	
-	padding: 15px 0;	
+
+	ul.social-buttons{
+		list-style-type: none;
+		display: flex;
+		align-items: center;
+		
+	
+		li a{
+			padding: 0px 10px;
+		}
+	}
+
+		
 
 	span{
 		flex-grow: 2;
 		font-family: $regular;
+		padding-bottom: 10px;
 		font-size: 14px;
 		color: #282626;
 	}

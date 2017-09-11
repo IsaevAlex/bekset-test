@@ -80,7 +80,7 @@
     padding: 20px 20px; }
     #fifth-section span {
       font-size: 14px; }
-    #fifth-section a:nth-child(1) {
+    #fifth-section ul.social-buttons li:nth-child(1) {
       display: none; }
-    #fifth-section a:nth-child(2) {
+    #fifth-section ul.social-buttons li:nth-child(2) {
       display: none; } }
