@@ -7,94 +7,73 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="css/media-queries.css" rel="stylesheet" type="text/css">
-	
+	<link rel="stylesheet" type="text/css" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-	<nav class="navbar">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-      			</button>
-			    <a  href="#">
-			    	<img src="img/logo.png" >
-			    </a>
-			</div>
-		    
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			    <ul class="nav navbar-nav navbar-right">
-			      <li><a href="#"><span class="glyphicon glyphicon-earphone"></span> 954214510322</a></li>
-			      <li>
-			      	<a href="#">
-			      		<img src="img/facebook-logo.png">	
-			      	</a>
-			      </li>
-			      <li>
-			      	<a href="#">
-			      		<img src="img/twitter.png">	
-			      	</a>
-			      </li>
-			      <li>
-			      	<a href="#">
-			      		<img src="img/google-plus.png">	
-			      	</a>
-			      </li>
-			      <li class="dropdown">
-			            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">EN <span class="caret"></span></a>
-			            <ul class="dropdown-menu">
-			              <li> 
-			                 <a href="">RU</a>
-			              </li>
-			              <li>
-			              	<a href="">FR</a>
-			              </li>
-			            </ul>
-			        </li>
-			        <div class="secret-list">
-			        	<li><a href="#">Ana səhifə </a></li>
-			      		<li><a href="#">Turlar</a></li>
-				      	<li><a href="#">Gəmi turları</a></li>
-				      	<li><a href="#">Hotellər</a></li>
-				      	<li><a href="#">Xarixi hotellər</a></li>
-				      	<li><a href="#">Haqqımızda</a></li>
-				      	<li><a href="#">Əlaqə</a></li>	
-			        </div>
-			        
-			    </ul>
-			</div>
-  			
-  		</div>	
-	</nav>
-	<nav class="navbar" id="second-navbar">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-      			</button>
-			    
-			</div>
-		    
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
-			    <ul class="nav navbar-nav ">
-			      <li><a href="#">Ana səhifə </a></li>
-			      <li><a href="#">Turlar</a></li>
-			      <li><a href="#">Gəmi turları</a></li>
-			      <li><a href="#">Hotellər</a></li>
-			      <li><a href="#">Xarixi hotellər</a></li>
-			      <li><a href="#">Haqqımızda</a></li>
-			      <li><a href="#">Əlaqə</a></li>
-			      
-			    </ul>
-			</div>
-  			
-  		</div>	
-	</nav>
+	
+	<header>
+		<div class="container secret-list">
+			<a href="index.html"><img src="img/logo.png" class="logo"></a>
+				<ul class="topnav links" id="myTopnav">
+					<li><a href=""><span class="glyphicon glyphicon-earphone"></span> 954214510322</a></li>
+					<li>
+						<a href="">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+			      			<i class="fa fa-twitter" aria-hidden="true"></i>
+			      		</a>
+					</li>
+					<li>
+						<a href="#">
+			      			<i class="fa fa-google-plus" aria-hidden="true"></i>
+			      		</a>
+					</li>
+					<li>
+						<a href="#">
+							EN <i class="fa fa-caret-down" aria-hidden="true"></i>
+
+						</a>
+						<ul class="submenu">
+            				<li><a href=#>Sudmenu 1</a></li>
+            				<li><a href=#>Sudmenu 1</a></li>
+            				<li><a href=#>Sudmenu 1</a></li>
+        				</ul>
+					</li>
+					
+				</ul>
+		</div>
+		<nav class="navbar" id="second-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-3" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+	      			</button>
+				     <a  href="#">
+			    		<img src="img/logo.png" >
+			    	</a>
+				</div>
+		   		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-3">
+				    <ul class="nav navbar-nav ">
+				      <li><a href="#">Ana səhifə </a></li>
+				      <li><a href="#">Turlar</a></li>
+				      <li><a href="#">Gəmi turları</a></li>
+				      <li><a href="#">Hotellər</a></li>
+				      <li><a href="#">Xarixi hotellər</a></li>
+				      <li><a href="#">Haqqımızda</a></li>
+				      <li><a href="#">Əlaqə</a></li>
+				      
+				    </ul>
+				</div>
+  			</div>	
+		</nav>
+	</header>
+	
 	<div id="first-section">
 		<div class="row">
 			<div class="container">
@@ -109,7 +88,7 @@
 				<div class="col-md-4">
 					<div class="border-class">
 						<span>Nəticələri filtirlə</span>
-						<span>15 nəticə</span>
+						<span>15 nəticə <i class="fa fa-caret-down" aria-hidden="true"></i></span><br><br>
 						<form method="post" action="">
 							<ul>
 								<li>
@@ -181,8 +160,8 @@
 						    	</p>	
 						    </div>
 						    <div class="media-head-right">
-						    	<h4>150 <i class="glyphicon glyphicon-time" aria-hidden="true"></i></h4>
-						    	<p><span>/</span>1 nəfər günlük</p>
+						    	<h4>150 <img src="img/azn.png" width="30px;"> </h4>
+						    	<p> <span> / </span> 1 nəfər günlük </p>
 						    </div>
 
 						    <p class="media-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
@@ -204,8 +183,8 @@
 						    	</p>		
 						    </div>
 						    <div class="media-head-right">
-						    	<h4>56 <i class="glyphicon glyphicon-time" aria-hidden="true"></i></h4>
-						    	<p><span>/</span>1 nəfər günlük</p>
+						    	<h4>150 <img src="img/azn.png" width="30px;"> </h4>
+						    	<p><span> / </span>1 nəfər günlük</p>
 						    </div>
 						    <p class="media-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
 						  </div>
@@ -225,8 +204,8 @@
 						    	</p>		
 						    </div>
 						    <div class="media-head-right">
-						    	<h4>73 <i class="glyphicon glyphicon-time" aria-hidden="true"></i></h4>
-						    	<p><span>/</span>1 nəfər günlük</p>
+						    	<h4>150 <img src="img/azn.png" width="30px;"> </h4>
+						    	<p><span> / </span>1 nəfər günlük</p>
 						    </div>
 						    <p class="media-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
 						  </div>
@@ -248,8 +227,8 @@
 						    	</p>		
 						    </div>
 						    <div class="media-head-right">
-						    	<h4>99 <i class="glyphicon glyphicon-time" aria-hidden="true"></i></h4>
-						    	<p><span>/</span>1 nəfər günlük</p>
+						    	<h4>150 <img src="img/azn.png" width="30px;"> </h4>
+						    	<p><span> / </span>1 nəfər günlük</p>
 						    </div>
 						    <p class="media-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
 						  </div>
@@ -269,8 +248,8 @@
 						    	</p>		
 						    </div>
 						    <div class="media-head-right">
-						    	<h4>73 <i class="glyphicon glyphicon-time" aria-hidden="true"></i></h4>
-						    	<p><span>/</span>1 nəfər günlük</p>
+						    	<h4>150 <img src="img/azn.png" width="30px;"> </h4>
+						    	<p><span> / </span>1 nəfər günlük</p>
 						    </div>
 						    <p class="media-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
 						  </div>
@@ -279,208 +258,209 @@
 			</div>	
 		</div>
 	</div>
-	<div id="third-section">
-		<div class="container">
-				<br>
-				
-			    <a  href="#">
-			    	<img src="img/logo.png" >
-			    </a>
-			
-		    <ul>
+	<footer>
+		<div id="third-section">
+			<div class="container"><br>
+				<a href="#">
+				   <img src="img/logo.png" >
+				</a>
+				<ul class="links">
 			      <li>
 			      	<a href="#">
-			      		<img src="img/facebook-logo.png">	
+			      		<i class="fa fa-facebook" aria-hidden="true"></i>	
 			      	</a>
 			      </li>
 			      <li>
 			      	<a href="#">
-			      		<img src="img/twitter.png">	
+			      		<i class="fa fa-twitter" id="fa-twitter" aria-hidden="true"></i>	
 			      	</a>
 			      </li>
 			      <li>
 			      	<a href="#">
-			      		<img src="img/google-plus.png">	
+			      		<i class="fa fa-google-plus" id="fa-google-plus" aria-hidden="true"></i>	
 			      	</a>
 			      </li>
 			  </ul>
-		 </div>	
-	</div><br>
-	<div id="fourth-section">
-		<div class="row" id="fourth-section-1">
-			<div class="container">
-				<div class="col-md-2">
-					<ul>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-2">
-					<ul>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-2">
-					<ul>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-2">
-					<ul>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-2">
-					<ul>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-2">
-					<ul>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-						<li>
-							Antalya Otelleri
-						</li>
-					</ul>
-				</div>
-			</div>
+			</div>	
 		</div><br>
-		<div class="row">
-			<div class="container" id="fourth-section-2">
-				<div class="col-md-4">
-					<h4>Əlaqə vasitələri</h4><br>
-					<p>
-						<span class="glyphicon glyphicon-earphone"></span> + 994 (12) 123 456 7890
-					</p>
-					<p>
-						<span class="glyphicon glyphicon-phone"></span>+ 994 (55) 123 456 7890 
-					</p>
-					
+		<div id="fourth-section">
+			<div class="row" id="fourth-section-1">
+				<div class="container">
+					<div class="col-md-2">
+						<ul>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-2">
+						<ul>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+							<li>
+								Antalya Otelleri
+							</li>
+						</ul>
+					</div>
 				</div>
-				<div class="col-md-4">
-					<h4></h4><br>
-					<p>
+			</div><br>
+			<div class="row">
+				<div class="container" id="fourth-section-2">
+					<div class="col-md-4">
+						<h4>Əlaqə vasitələri</h4><br>
+						<p>
+							<span class="glyphicon glyphicon-earphone"></span> + 994 (12) 123 456 7890
+						</p>
+						<p>
+							<span class="glyphicon glyphicon-phone"></span>+ 994 (55) 123 456 7890 
+						</p>
 						
-						<span class="glyphicon  glyphicon-map-marker"></span> Yasamal rayonu A.M.Şərifzadə küçəsi
-					</p>
-					<p>
-						<span>Bakı / Azərbaycan  - Az1000</span>
-					</p>
+					</div>
+					<div class="col-md-4">
+						<h4></h4><br>
+						<p>
+							
+							<span class="glyphicon  glyphicon-map-marker"></span> Yasamal rayonu A.M.Şərifzadə küçəsi
+						</p>
+						<p>
+							<span>Bakı / Azərbaycan  - Az1000</span>
+						</p>
+					</div>
+					<div class="col-md-4">
+						<h4>İş saatları</h4><br>
+						<p>
+							<span class="glyphicon glyphicon glyphicon-ok-sign"></span> Həftə içi   -   saat 09:00 dan / 20:00 dək
+						</p>
+						<p>
+							Şənbə, bazar   -   saat 10:00 dan / 16:00 dək
+						</p>
+					</div>
 				</div>
-				<div class="col-md-4">
-					<h4>İş saatları</h4><br>
-					<p>
-						<span class="glyphicon glyphicon glyphicon-ok-sign"></span> Həftə içi   -   saat 09:00 dan / 20:00 dək
-					</p>
-					<p>
-						Şənbə, bazar   -   saat 10:00 dan / 16:00 dək
-					</p>
-				</div>
-			</div>
+			</div><br>
 		</div><br>
-	</div><br>
-	<footer>
-		<div class="row">
-			<div class="container">
-				<span>Copyright 2017</span>
-				
-				<div class="social-buttons">
-					<a href="">
-						<img src="img/visa.png" width="60px;">
-					</a>
-					<a href="">
-						<img src="img/mastercard.png" width="60px;">
-					</a>
-					<a href="">
-						<img src="img/google-play.png" width="60px;">
-					</a>
-					<a href="">
-						<img src="img/app-store.png" width="60px;">
-					</a>
-				</div>	
+		<div id="fifth-section">
+			<div class="row">
+				<div class="container">
+					<span>Copyright 2017</span>
+					
+					<div class="social-buttons">
+						<a href="">
+							<img src="img/visa.png" width="60px;">
+						</a>
+						<a href="">
+							<img src="img/mastercard.png" width="60px;">
+						</a>
+						<a href="">
+							<img src="img/google-play.png" width="60px;">
+						</a>
+						<a href="">
+							<img src="img/app-store.png" width="60px;">
+						</a>
+					</div>	
+				</div>
 			</div>
 		</div>
+		
 	</footer>
+
 	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

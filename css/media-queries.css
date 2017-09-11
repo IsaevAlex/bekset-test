@@ -7,42 +7,63 @@
     font-size: 15px; } }
 
 @media screen and (max-width: 770px) {
+  #second-section .col-md-4:nth-child(1) {
+    margin: 20px; }
+  #second-section span:nth-child(2) {
+    font-size: 13px; }
   .secret-list {
-    display: block; }
-  #second-navbar {
     display: none; }
+  #second-navbar {
+    border-top: none; }
   .navbar {
     border-bottom: 3px solid #70276f; }
+    .navbar ul {
+      text-align: center;
+      background-color: #70276f; }
     .navbar a {
       padding-left: 20px; }
+    .navbar li a {
+      margin-right: 0px; }
     .navbar .navbar-header {
       margin-bottom: 20px; }
+    .navbar button.navbar-toggle.collapsed {
+      margin-top: 18px; }
   #first-section {
     background-color: #fff;
     border-bottom: 2px solid #e4e4e4;
     padding: 0 20px; }
-    #first-section h5 {
-      font-size: 17px; }
+    #first-section h5:nth-child(1) {
+      font-size: 18px; }
+    #first-section h5:nth-child(2) {
+      font-size: 13px; }
   .media-text {
     display: none; }
-  #second-section ul {
-    padding-left: 0; }
-  .border-class {
-    border: 2px solid #e4e4e4;
-    padding: 10px 20px;
-    margin-bottom: 20px; }
+  .media p {
+    font-size: 13px; }
+  #second-navbar img {
+    display: block;
+    padding-left: 20px; }
+  #second-navbar li a {
+    color: #ffffff;
+    border-top: 1px solid #fff; }
+  #second-navbar li a:hover {
+    color: #70276f;
+    background: #fff; }
   .media-head-left {
     float: none; }
   .media-head-right {
     float: none;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    padding-right: 0px; }
     .media-head-right span {
+      padding: 0 10px;
       display: inline; }
     .media-head-right h4 {
-      font-size: 20px;
+      font-size: 18px;
       margin: 0; }
     .media-head-right p {
+      font-size: 13px;
       margin: 0; }
   .media {
     border: 2px solid #e4e4e4; }
@@ -55,11 +76,11 @@
     margin-bottom: 32px; } }
 
 @media screen and (max-width: 875px) {
-  footer {
+  #fifth-section {
     padding: 20px 20px; }
-    footer span {
-      font-size: 18px; }
-    footer a:nth-child(1) {
+    #fifth-section span {
+      font-size: 14px; }
+    #fifth-section a:nth-child(1) {
       display: none; }
-    footer a:nth-child(2) {
+    #fifth-section a:nth-child(2) {
       display: none; } }

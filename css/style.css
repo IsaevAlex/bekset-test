@@ -19,18 +19,28 @@ body {
 html {
   overflow-y: scroll; }
 
+.fa-caret-down, .fa-facebook, .fa-google-plus, .fa-twitter {
+  color: #563d7c; }
+
+#fa-google-plus {
+  color: #e0e0e0; }
+
+#fa-twitter {
+  color: #e0e0e0; }
+
+.media {
+  border: 2px solid #efefef; }
+
 .media:nth-child(5) {
   display: none; }
 
-.secret-list {
-  display: none; }
-
 .navbar {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 0; }
   .navbar li a {
-    font-size: 21px;
-    color: #70276f; }
+    font-size: 14px;
+    color: #28374f;
+    margin-right: 35px; }
   .navbar li a:hover {
     background-color: #70276f;
     color: #fff; }
@@ -39,14 +49,66 @@ html {
   background-color: #70276f; }
 
 #second-navbar {
+  border-top: 2px solid #efefef;
   border-bottom: 3px solid #70276f;
   font-size: 19px; }
+  #second-navbar img {
+    display: none; }
   #second-navbar li a {
     color: #28374f;
     font-family: Source Sans Pro Regular; }
   #second-navbar li a:hover {
     background-color: #70276f;
     color: #fff; }
+
+header {
+  margin-top: 10px;
+  top: 10px;
+  left: 0;
+  right: 0;
+  width: 100%; }
+
+header img {
+  float: left; }
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  float: right; }
+
+/* Float the list items side by side */
+ul.topnav li {
+  float: left;
+  text-transform: uppercase; }
+
+/* Style the links inside the list items */
+ul.topnav li a {
+  display: inline-block;
+  color: #28374f;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+  font-family: Source Sans Pro Regular; }
+
+/* Change background color of links on hover */
+ul.links li:not(:first-child):hover {
+  border-bottom: 3px #563d7c solid;
+  cursor: pointer; }
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.submenu {
+  display: none;
+  position: absolute;
+  top: 37px;
+  border: 1px solid #70276f; }
+
+ul.topnav > li:hover > ul.submenu {
+  display: block; }
 
 #first-section {
   background-color: #efefef;
@@ -56,59 +118,78 @@ html {
     justify-content: space-between;
     align-items: center; }
   #first-section h5:nth-child(1) {
-    font-size: 37px;
+    font-size: 28px;
     font-family: Source Sans Pro Semibold;
     flex-grow: 2; }
   #first-section h5:nth-child(2) {
     font-family: Source Sans Pro Regular;
-    font-size: 19px; }
+    font-size: 14px; }
+
+.border-class span:nth-child(2) {
+  float: right; }
 
 .media-head-left {
   float: left; }
   .media-head-left h4 {
     font-family: Source Sans Pro Semibold;
-    font-size: 22px; }
+    font-size: 18px; }
   .media-head-left span {
     font-family: Source Sans Pro Regular;
-    font-size: 14px; }
+    font-size: 13px; }
 
 .media-head-right {
-  float: right; }
+  float: right;
+  padding-right: 15px; }
   .media-head-right span {
     display: none; }
   .media-head-right h4 {
-    font-size: 29px;
+    font-size: 22px;
     color: #ffc263; }
   .media-head-right p {
     font-family: Source Sans Pro Regular;
-    font-size: 17px; }
+    font-size: 13px; }
 
 .media p {
   clear: both;
   font-family: Source Sans Pro Regular;
-  font-size: 18px; }
+  font-size: 14px;
+  color: #868686; }
 
 #second-section {
   padding: 20px 0;
   border-bottom: 3px solid #70276f; }
+  #second-section ul {
+    padding-left: 0; }
   #second-section span {
     font-family: Source Sans Pro light; }
   #second-section span:nth-child(1) {
-    font-size: 29px;
-    color: #70276f; }
+    font-size: 23px;
+    color: #563d7c;
+    float: left; }
   #second-section span:nth-child(2) {
-    font-size: 20px; }
+    font-size: 16px;
+    color: #333333;
+    padding-top: 8px; }
   #second-section li {
     list-style: none;
     font-family: Source Sans Pro Regular;
-    font-size: 21px; }
+    font-size: 15px; }
   #second-section h3 {
     font-family: Source Sans Pro Semibold;
-    font-size: 24px;
+    font-size: 18px;
     color: #333333; }
+  #second-section .col-md-4:nth-child(1) {
+    border: 2px solid #efefef; }
 
 input[type="checkbox"] {
-  margin-right: 5px; }
+  margin-right: 5px;
+  cursor: pointer;
+  border-radius: 20px; }
+
+input[type="checkbox"] + label {
+  font-size: 15px;
+  font-family: Source Sans Pro Regular;
+  cursor: pointer; }
 
 .glyphicon-star {
   background-color: #fff;
@@ -122,34 +203,41 @@ input[type="checkbox"] {
 
 #third-section li {
   display: inline;
-  padding: 10px; }
+  padding: 10px;
+  font-size: 16px; }
 
 #fourth-section ul li {
-  font-size: 18px;
-  font-family: Source Sans Pro Regular; }
+  font-size: 14px;
+  font-family: Source Sans Pro Regular;
+  color: #000000; }
 
 #fourth-section h4 {
   font-family: Source Sans Pro Semibold;
-  font-size: 22px; }
+  color: #282626;
+  font-size: 16px; }
 
 #fourth-section p {
   font-family: Source Sans Pro Regular;
-  font-size: 20px; }
+  font-size: 14px;
+  color: #282626; }
 
 #fourth-section-2 .col-md-4:nth-child(2) {
   margin-top: 32px; }
 
 .glyphicon-earphone, .glyphicon-phone, .glyphicon-map-marker, .glyphicon-ok-sign {
-  color: #70276f; }
+  color: #563d7c; }
 
-footer {
-  background-color: #efefef;
-  padding: 20px 0; }
-  footer .container {
+#fifth-section {
+  background-color: #efefef; }
+
+#fifth-section {
+  padding: 15px 0; }
+  #fifth-section .container {
     display: flex;
     justify-content: space-between;
     align-items: center; }
-  footer span {
+  #fifth-section span {
     flex-grow: 2;
     font-family: Source Sans Pro Regular;
-    font-size: 19px; }
+    font-size: 14px;
+    color: #282626; }
