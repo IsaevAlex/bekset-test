@@ -7,6 +7,17 @@
     font-size: 15px; } }
 
 @media screen and (max-width: 770px) {
+  .adaptive-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px; }
+    .adaptive-menu ul.navbar-nav {
+      margin-top: 30px;
+      display: flex;
+      float: right; }
+  #second-navbar {
+    display: none; }
   #second-section .col-md-4:nth-child(1) {
     margin: 20px; }
   #second-section span:nth-child(2) {
@@ -26,8 +37,6 @@
       margin-right: 0px; }
     .navbar .navbar-header {
       margin-bottom: 20px; }
-    .navbar button.navbar-toggle.collapsed {
-      margin-top: 18px; }
   #first-section {
     background-color: #fff;
     border-bottom: 2px solid #e4e4e4;
