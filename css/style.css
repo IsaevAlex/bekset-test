@@ -10,6 +10,10 @@
   src: url("../fonts/source-sans-pro.semibold.ttf");
   font-family: Source Sans Pro Semibold; }
 
+@font-face {
+  src: url("../fonts/Source Sans Pro Bold.ttf");
+  font-family: Source Sans Pro Bold; }
+
 .adaptive-menu {
   display: none; }
 
@@ -28,6 +32,8 @@
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidenav */ }
 
@@ -42,6 +48,8 @@
   font-family: Source Sans Pro Regular;
   color: #28374f;
   display: block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s; }
 
 .sidenav h2 {
@@ -84,7 +92,8 @@
   display: none;
   position: absolute;
   background-color: #fff;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   list-style: none;
   padding-left: 0; }
@@ -108,11 +117,20 @@
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  flex-direction: column; }
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
+  -webkit-transition: margin-left .5s;
+  -o-transition: margin-left .5s;
   transition: margin-left .5s; }
 
 body {
@@ -124,7 +142,7 @@ body {
 html {
   overflow-y: scroll; }
 
-.fa-caret-down, .fa-facebook, .fa-google-plus, .fa-twitter, .fa-bars {
+.fa-caret-down, .fa-facebook, .fa-google-plus, .fa-twitter, .fa-bars, .fa-map-marker, .fa-mobile, .fa-phone {
   color: #563d7c; }
 
 #fa-google-plus {
@@ -144,8 +162,7 @@ html {
   margin-bottom: 0; }
   .navbar li a {
     font-size: 14px;
-    color: #28374f;
-    margin-right: 35px; }
+    color: #28374f; }
   .navbar li a:hover {
     background-color: #70276f;
     color: #fff; }
@@ -161,6 +178,9 @@ html {
 .navbar-nav .fa-bars:hover {
   color: #fff; }
 
+.navbar {
+  min-height: 0px; }
+
 .navbar .navbar-toggle .icon-bar {
   background-color: #70276f; }
 
@@ -172,7 +192,11 @@ html {
     display: none; }
   #second-navbar li a {
     color: #28374f;
-    font-family: Source Sans Pro Regular; }
+    font-family: Source Sans Pro Regular;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-right: 30px;
+    padding-left: 30px; }
   #second-navbar li a:hover {
     background-color: #70276f;
     color: #fff; }
@@ -206,9 +230,16 @@ ul.topnav li a {
   padding: 10px 10px;
   text-decoration: none;
   -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
   transition: 0.3s;
   font-size: 17px;
   font-family: Source Sans Pro Regular; }
+
+ul.topnav li:nth-child(1) {
+  padding-right: 40px; }
+
+ul.topnav li:nth-child(4) {
+  padding-right: 35px; }
 
 /* Change background color of links on hover */
 ul.links li:not(:first-child):hover {
@@ -223,15 +254,30 @@ ul.topnav > li:hover > ul.submenu {
   background-color: #efefef;
   padding: 40px 0; }
   #first-section .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
   #first-section h5:nth-child(1) {
     font-size: 28px;
     font-family: Source Sans Pro Semibold;
-    flex-grow: 2; }
+    -webkit-box-flex: 2;
+    -webkit-flex-grow: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2; }
   #first-section h5:nth-child(2) {
     font-family: Source Sans Pro Regular;
+    font-size: 14px; }
+  #first-section span {
+    font-family: Source Sans Pro Bold;
     font-size: 14px; }
 
 .border-class span:nth-child(2) {
@@ -249,6 +295,8 @@ ul.topnav > li:hover > ul.submenu {
   .media-head-left span {
     font-family: Source Sans Pro Regular;
     font-size: 13px; }
+  .media-head-left p {
+    margin-top: 10px; }
 
 .media-head-right {
   float: right;
@@ -256,20 +304,26 @@ ul.topnav > li:hover > ul.submenu {
   .media-head-right span {
     display: none; }
   .media-head-right h4 {
+    margin-top: 10px;
     font-size: 22px;
-    color: #ffc263; }
+    color: #ffc263;
+    margin-bottom: 0px; }
   .media-head-right p {
     font-family: Source Sans Pro Regular;
     font-size: 13px; }
+  .media-head-right img {
+    margin-bottom: 10px; }
 
-.media p {
+.media-text {
   clear: both;
   font-family: Source Sans Pro Regular;
   font-size: 14px;
-  color: #868686; }
+  color: #868686;
+  margin-top: 10px; }
 
 #second-section {
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 60px;
   border-bottom: 3px solid #70276f; }
   #second-section ul {
     padding-left: 0; }
@@ -290,14 +344,16 @@ ul.topnav > li:hover > ul.submenu {
   #second-section h3 {
     font-family: Source Sans Pro Semibold;
     font-size: 18px;
-    color: #333333; }
+    color: #333333;
+    margin-top: 30px; }
   #second-section .col-md-4:nth-child(1) {
     border: 2px solid #efefef; }
 
 input[type="checkbox"] {
   margin-right: 5px;
   cursor: pointer;
-  border-radius: 20px; }
+  -webkit-border-radius: 20px;
+          border-radius: 20px; }
 
 input[type="checkbox"] + label {
   font-size: 15px;
@@ -308,34 +364,37 @@ input[type="checkbox"] + label {
   background-color: #fff;
   color: #ffc263; }
 
-#third-section ul {
-  float: right;
-  list-style: none;
-  margin-top: 20px;
-  padding: 0; }
+#third-section {
+  margin-bottom: 15px; }
+  #third-section ul {
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+    padding: 0; }
+  #third-section li {
+    display: inline;
+    padding: 10px;
+    font-size: 16px; }
 
-#third-section li {
-  display: inline;
-  padding: 10px;
-  font-size: 16px; }
-
-#fourth-section ul li {
-  font-size: 14px;
-  font-family: Source Sans Pro Regular;
-  color: #000000; }
-
-#fourth-section h4 {
-  font-family: Source Sans Pro Semibold;
-  color: #282626;
-  font-size: 16px; }
-
-#fourth-section p {
-  font-family: Source Sans Pro Regular;
-  font-size: 14px;
-  color: #282626; }
+#fourth-section {
+  border-top: 2px solid #efefef; }
+  #fourth-section ul li {
+    font-size: 14px;
+    font-family: Source Sans Pro Regular;
+    color: #000000; }
+  #fourth-section h4 {
+    font-family: Source Sans Pro Semibold;
+    color: #282626;
+    font-size: 16px; }
+  #fourth-section p {
+    font-family: Source Sans Pro Regular;
+    font-size: 14px;
+    color: #282626; }
 
 #fourth-section-1 {
   padding-top: 60px; }
+  #fourth-section-1 ul {
+    padding-left: 0; }
 
 #fourth-section-2 {
   padding: 40px 0px; }
@@ -343,26 +402,41 @@ input[type="checkbox"] + label {
 #fourth-section-2 .col-md-4:nth-child(2) {
   margin-top: 25px; }
 
-.glyphicon-earphone, .glyphicon-phone, .glyphicon-map-marker, .glyphicon-ok-sign {
-  color: #563d7c; }
-
 #fifth-section {
   background-color: #efefef; }
 
 #fifth-section .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 #fifth-section ul.social-buttons {
   list-style-type: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
   #fifth-section ul.social-buttons li a {
     padding: 0px 10px; }
 
 #fifth-section span {
-  flex-grow: 2;
+  -webkit-box-flex: 2;
+  -webkit-flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
   font-family: Source Sans Pro Regular;
   padding-bottom: 10px;
   font-size: 14px;

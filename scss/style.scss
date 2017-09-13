@@ -127,7 +127,7 @@ html {
   overflow-y: scroll;
 }
 
-.fa-caret-down, .fa-facebook, .fa-google-plus, .fa-twitter, .fa-bars{
+.fa-caret-down, .fa-facebook, .fa-google-plus, .fa-twitter, .fa-bars, .fa-map-marker, .fa-mobile, .fa-phone {
 	color: #563d7c;
 }
 
@@ -141,6 +141,7 @@ html {
 
 .media{
 	border: 2px solid #efefef;
+
 }
 
 .media:nth-child(5){
@@ -154,7 +155,7 @@ html {
 	li a{
 		font-size: 14px;
 		color: #28374f;
-		margin-right: 35px;
+		
 	}
 	
 	li a:hover{
@@ -182,7 +183,9 @@ html {
 }
 
 
-
+.navbar{
+	min-height: 0px;
+}
 
 
 .navbar .navbar-toggle .icon-bar {
@@ -202,6 +205,10 @@ html {
 	li a{
 		color: #28374f;	
 		font-family: $regular;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		padding-right: 30px;
+		padding-left: 30px;
 	}
 
 	li a:hover{
@@ -250,6 +257,14 @@ ul.topnav li a {
   font-family: $regular;
 }
 
+ul.topnav li:nth-child(1){
+	padding-right: 40px;
+}
+
+ul.topnav li:nth-child(4){
+	padding-right: 35px;
+}
+
 /* Change background color of links on hover */
 ul.links li:not(:first-child):hover {
   border-bottom: 3px #563d7c solid;
@@ -285,6 +300,12 @@ ul.topnav > li:hover > ul.submenu {
 		font-size: 14px;
 		
 	}
+
+	span{
+		font-family: $bold;
+		
+		font-size: 14px;
+	}
 }
 
 
@@ -306,9 +327,12 @@ ul.topnav > li:hover > ul.submenu {
 	}
 
 	span{
-
 		font-family: $regular;
 		font-size: 13px;
+	}
+
+	p{
+		margin-top: 10px;
 	}
 }
 
@@ -319,26 +343,34 @@ ul.topnav > li:hover > ul.submenu {
 		display: none;
 	}
 	h4{
+		margin-top: 10px;
 		font-size: 22px;
 		color: #ffc263;
+		margin-bottom: 0px;
 	}
 
 	p{
 		font-family: $regular;
 		font-size: 13px;
+		
+	}
 
+	img{
+		margin-bottom: 10px;
 	}
 }
 
-.media p{
+.media-text{
 	clear: both;
 	font-family: $regular;
 	font-size: 14px;
 	color: #868686;
+	margin-top: 10px;
 }
 
 #second-section{
-	padding: 20px 0;
+	padding-top: 20px;
+	padding-bottom: 60px;
 	border-bottom: 3px solid #70276f;
 
 	ul{
@@ -361,7 +393,6 @@ ul.topnav > li:hover > ul.submenu {
 	span:nth-child(2){
 		font-size: 16px;
 		color: #333333;
-		
 		padding-top: 8px;
 	}
 
@@ -374,6 +405,7 @@ ul.topnav > li:hover > ul.submenu {
 		font-family: $semibold;
 		font-size: 18px;
 		color: #333333;
+		margin-top: 30px;
 	}
 
 	.col-md-4:nth-child(1){
@@ -406,17 +438,20 @@ input[type="checkbox"] + label{
 		list-style: none; 
 		margin-top: 20px; 
 		padding: 0;
+
 	}
-   
+    margin-bottom: 15px;  
     li {display: inline; padding: 10px; font-size: 16px; }
+
 }
 
 #fourth-section{
+	border-top: 2px solid #efefef;
 	ul li{
 		font-size: 14px;
 		font-family: $regular;
 		color: #000000;
-
+		
 	}
 
 	h4{
@@ -435,6 +470,9 @@ input[type="checkbox"] + label{
 
 #fourth-section-1{
 	padding-top: 60px;
+	ul{
+		padding-left: 0;
+	}
 }
 
 #fourth-section-2{
@@ -443,10 +481,6 @@ input[type="checkbox"] + label{
 
 #fourth-section-2 .col-md-4:nth-child(2){
 	margin-top: 25px;
-}
-
-.glyphicon-earphone, .glyphicon-phone, .glyphicon-map-marker, .glyphicon-ok-sign{
-	color: #563d7c;
 }
 
 #fifth-section{

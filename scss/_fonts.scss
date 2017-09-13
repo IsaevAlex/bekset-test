@@ -13,6 +13,12 @@
 	font-family: Source Sans Pro Semibold;
 }
 
+@font-face{
+	src: url("../fonts/Source Sans Pro Bold.ttf");
+	font-family: Source Sans Pro Bold;
+}
+
+$bold: Source Sans Pro Bold;
 $regular: Source Sans Pro Regular;
 $light: Source Sans Pro light;
 $semibold: Source Sans Pro Semibold;
